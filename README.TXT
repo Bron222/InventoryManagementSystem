@@ -1,32 +1,59 @@
-========================
-BUILD OUTPUT DESCRIPTION
-========================
+===================
+CREATOR INFORMATION
+===================
 
-When you build an Java application project that has a main class, the IDE
-automatically copies all of the JAR
-files on the projects classpath to your projects dist/lib folder. The IDE
-also adds each of the JAR files to the Class-Path element in the application
-JAR files manifest file (MANIFEST.MF).
+Bron Whitten
 
-To run the project from the command line, go to the dist folder and
-type the following:
+=================
+BUILD INFORMATION
+=================
 
-java -jar "InventoryManagementSystemProject2025.jar" 
+Language: Java
+GUI: Java Swing Library
+Database: MySQL hosted in AWS
+Dependencies: Maven
+IDE used: NetBeans
 
-To distribute this project, zip up the dist folder (including the lib folder)
-and distribute the ZIP file.
+==================
+OVERVIEW OF SYSTEM
+==================
 
-Notes:
+This project is a simple inventory management system application for desktop. 
+Included in this repository are the .java class files, .form files, pom.xlm, and .ico resources in order to implement this project.
 
-* If two JAR files on the project classpath have the same name, only the first
-JAR file is copied to the lib folder.
-* Only JAR files are copied to the lib folder.
-If the classpath contains other types of files or folders, these files (folders)
-are not copied.
-* If a library on the projects classpath also has a Class-Path element
-specified in the manifest,the content of the Class-Path element has to be on
-the projects runtime path.
-* To set a main class in a standard Java project, right-click the project node
-in the Projects window and choose Properties. Then click Run and enter the
-class name in the Main Class field. Alternatively, you can manually type the
-class name in the manifest Main-Class element.
+MainWindow.java is the main class inside this program. All of classes branch from this GUI window (frame).
+DatabaseUtil.java control most database interactions, but not all. It primarily is for establishing the initial connection and loading the menu table's data.
+All other classes are responsible for operating their respective button features to control CRUD control for the inventory's data.
+Each class will have some operations that query and manipulate data within the database.
+DeleteButtonFrame.java interacts with the interface class to allow deletion of data.
+ReportMenuButtonFrame.class directly reports two figures: basic Sales Report information and Low Stock table for inventory alerts.
+
+===================
+INSTRUCTIONS ON USE
+===================
+
+Upon opening the program, the main window will display the table containing stock items as indicated by the table's label. 
+Select any menu button you would like in order to load the appropriate data into the table.
+Within each menu option selected, you have the option to "add new", "edit", or "delete"  record which can be selected with the appropriately labeled button. 
+It is recommended that you use the "refresh" button after each edit or addition made to keep the table updated. Selecting the appropriate menu button again will also refresh the table.
+
+To ADD a record, select the "add new" button. Then follow the instructions on-screen. Then refresh the table. NOTE: When adding a sale, multiple items can be added to a single sales transaction. Only one purchase order item can be made at a time.
+
+To EDIT a record, select a record in the table and then press the "edit" button. Follow the on-screen instructions. Then refresh the table.
+
+To DELETE a record, select the appropriate record, then select delete, then confirm your deletion. Confirming a deletion will automatically refresh the table. NOTE: Deleting an item from the purchases or sales tables will delete all items in that transaction with the same ID number, not just that individual record.
+
+The reports button will automatically report the most updated data on-screen when selected.
+
+=============
+SPECIAL NOTES
+=============
+
+This inventory management system will allow for negative stock quantities. This is to allow for pending orders and pre-order.
+
+Enjoy!
+
+
+
+
+

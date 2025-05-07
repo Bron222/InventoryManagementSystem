@@ -51,7 +51,7 @@ SPECIAL NOTES
 
 This inventory management system will allow for negative stock quantities. This is to allow for pending orders and pre-order.
 
-This project archived and no longer maintained.
+This project is archived and no longer maintained.
 
 Enjoy!
 

@@ -18,6 +18,9 @@ IDE used: NetBeans
 OVERVIEW OF SYSTEM
 ==================
 
+![InventoryManagementSystemPic](https://github.com/user-attachments/assets/96aefc8c-e2a3-4c57-883b-2aebfa84dacc)
+
+
 This project is a simple inventory management system application for desktop. 
 Included in this repository are the .java class files, .form files, pom.xlm, and .ico resources in order to implement this project.
 

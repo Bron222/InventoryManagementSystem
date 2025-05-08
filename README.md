@@ -1,10 +1,10 @@
-===================
+
 CREATOR INFORMATION
 ===================
 
 Bron Whitten
 
-=================
+
 BUILD INFORMATION
 =================
 
@@ -14,7 +14,7 @@ Database: MySQL hosted in AWS
 Dependencies: Maven
 IDE used: NetBeans
 
-==================
+
 OVERVIEW OF SYSTEM
 ==================
 
@@ -31,7 +31,7 @@ Each class will have some operations that query and manipulate data within the d
 DeleteButtonFrame.java interacts with the interface class to allow deletion of data.
 ReportMenuButtonFrame.class directly reports two figures: basic Sales Report information and Low Stock table for inventory alerts.
 
-===================
+
 INSTRUCTIONS ON USE
 ===================
 
@@ -48,7 +48,7 @@ To DELETE a record, select the appropriate record, then select delete, then conf
 
 The reports button will automatically report the most updated data on-screen when selected.
 
-=============
+
 SPECIAL NOTES
 =============
 

@@ -1,4 +1,5 @@
 Inventory Management System
+===========================
 
 
 CREATOR INFORMATION
@@ -11,9 +12,13 @@ BUILD INFORMATION
 =================
 
 Language: Java
+
 GUI: Java Swing Library
+
 Database: MySQL hosted in AWS
+
 Dependencies: Maven
+
 IDE used: NetBeans
 
 

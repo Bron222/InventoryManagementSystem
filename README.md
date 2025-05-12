@@ -15,9 +15,9 @@ Language: Java
 
 GUI: Java Swing Library
 
-Database: MySQL hosted in AWS
+Database: MySQL hosted in AWS RDS
 
-Dependencies: Maven
+Build tool: Maven
 
 IDE used: NetBeans
 

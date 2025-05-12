@@ -11,13 +11,15 @@ Bron Whitten
 BUILD INFORMATION
 =================
 
-Language: Java
+Language: Java (Java 22+)
 
-GUI: Java Swing Library
+GUI: Java Swing
 
-Database: MySQL hosted in AWS RDS
+Built Tool: Apache Maven
 
-Build tool: Maven
+Database: MySQL (hosted remotely via cloud AWS RDS)
+
+JDBC Driver: MySQL Connector/J (managed through Maven)
 
 IDE used: NetBeans
 

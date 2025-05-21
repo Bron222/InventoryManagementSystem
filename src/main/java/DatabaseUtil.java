@@ -34,7 +34,7 @@ public class DatabaseUtil {
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 
                 //*******DATABASE CONNECTION INFORMATION*********
-                String host = "ims-db.c54u40am89s9.us-east-2.rds.amazonaws.com";  // fallback default
+                String host = "your_database_host";  // fallback default
                 String user = "your_username";
                 String password = "your_password";
 

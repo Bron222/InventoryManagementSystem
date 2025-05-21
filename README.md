@@ -114,19 +114,10 @@ Click the **Reports** button to view:
 - Deleting a sale or purchase deletes all items with the same transaction ID.
 - Always click “Refresh” after making changes to update the table.
 
-## 📦 Optional Enhancements
-
-- Add `schema.sql` to the `/sql` folder to define all required database tables.
-- Add `seed.sql` for inserting sample data.
-- Upload a `.jar`, `.exe`, or installer in the GitHub Releases tab.
-- Include application screenshots in a `/screenshots` folder and embed them in this README.
-- Add a LICENSE file (MIT is a common default).
-
 ## 📄 License
 
 This project is provided for educational use and demonstration.  
-If you wish to open-source it, you can add a LICENSE file.
 
 ## 📬 Contact
 
-If you found this project useful or have questions, feel free to fork it or open an issue. Thanks for visiting!
+If you found this project useful or have questions, feel free to reach out. Thanks for visiting!

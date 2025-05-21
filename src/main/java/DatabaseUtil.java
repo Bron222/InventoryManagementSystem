@@ -35,8 +35,8 @@ public class DatabaseUtil {
                 
                 //*******DATABASE CONNECTION INFORMATION*********
                 String host = "ims-db.c54u40am89s9.us-east-2.rds.amazonaws.com";  // fallback default
-                String user = "imsuser";
-                String password = "imsStrongP@ss123!";
+                String user = "your_username";
+                String password = "your_password";
 
             String url = "jdbc:mysql://" + host + ":3306/ims_db?useSSL=true&allowPublicKeyRetrieval=true&requireSSL=true&serverTimezone=UTC";
                 

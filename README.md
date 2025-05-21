@@ -15,7 +15,7 @@ Developed as part of a software development academic program.
 * **Language**: Java (Java 22+)
 * **GUI**: Java Swing
 * **Build Tool**: Apache Maven
-* **Database**: MySQL (hosted remotely via AWS RDS)
+* **Database**: MySQL (hosted mine remotely via AWS RDS)
 * **JDBC Driver**: MySQL Connector/J (managed via Maven)
 * **IDE**: NetBeans
 

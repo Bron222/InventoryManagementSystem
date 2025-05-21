@@ -6,8 +6,8 @@ A desktop-based Inventory Management System built using **Java Swing**, **MySQL*
 
 ## 👤 Creator
 
-**Bron Whitten**
-Developed as part of a software development academic program.
+**Bron Whitten**  
+Developed as part of a software development academic program.  
 *This project is archived and no longer actively maintained.*
 
 ## 🛠️ Tech Stack

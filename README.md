@@ -73,15 +73,17 @@ source sql/seed.sql;
 
 ### 3. Configure Database Connection
 
-In `DatabaseUtil.java`, update your database credentials:
+In `DatabaseUtil.java`, update the following values with your own database connection details:
 
 ```java
-String url = "jdbc:mysql://your-db-host:3306/ims_db";
+String host = "your_database_host";     // e.g., localhost or your AWS RDS endpoint
 String user = "your_username";
 String password = "your_password";
+
+String url = "jdbc:mysql://" + host + ":3306/ims_db?useSSL=true&allowPublicKeyRetrieval=true&requireSSL=true&serverTimezone=UTC";
 ```
 
-Alternatively, use a `db.properties` file and load it with `Properties` in Java for better flexibility.
+Make sure the database name in the URL (`ims_db`) matches the one created by the `schema.sql` file.
 
 ### 4. Build the Project
 

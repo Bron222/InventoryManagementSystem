@@ -6,18 +6,18 @@ A desktop-based Inventory Management System built using **Java Swing**, **MySQL*
 
 ## 👤 Creator
 
-**Bron Whitten**  
-Developed as part of a software development academic program.  
-_This project is archived and no longer actively maintained._
+**Bron Whitten**
+Developed as part of a software development academic program.
+*This project is archived and no longer actively maintained.*
 
 ## 🛠️ Tech Stack
 
-- **Language**: Java (Java 22+)  
-- **GUI**: Java Swing  
-- **Build Tool**: Apache Maven  
-- **Database**: MySQL (hosted remotely via AWS RDS)  
-- **JDBC Driver**: MySQL Connector/J (managed via Maven)  
-- **IDE**: NetBeans  
+* **Language**: Java (Java 22+)
+* **GUI**: Java Swing
+* **Build Tool**: Apache Maven
+* **Database**: MySQL (hosted remotely via AWS RDS)
+* **JDBC Driver**: MySQL Connector/J (managed via Maven)
+* **IDE**: NetBeans
 
 ## 📁 Project Structure
 
@@ -26,44 +26,50 @@ src/
 ├── main/
 │   ├── java/                      # Java source files and .form UI definitions
 │   └── resources/                # Icon resources (.ico, .icns)
-├── sql/
-│   ├── schema.sql                # (You must add this file)
-│   └── seed.sql                  # (Optional: Add sample data here)
-├── pom.xml                       # Maven project file
-├── README.md                     # Project documentation
+sql/
+├── schema.sql                   # Database table structures (run first)
+├── seed.sql                     # Sample data (optional, run after schema)
+pom.xml                          # Maven project file
+README.md                        # Project documentation
 ```
 
 ## ✅ Features
 
-- Manage products, suppliers, sales, and purchases  
-- Add, edit, delete records from each category  
-- Refresh tables for real-time data updates  
-- Basic reporting on sales and low-stock inventory  
-- Multi-item support in sales transactions  
-- Simple and clear Swing-based GUI  
+* Manage products, suppliers, sales, and purchases
+* Add, edit, delete records from each category
+* Refresh tables for real-time data updates
+* Basic reporting on sales and low-stock inventory
+* Multi-item support in sales transactions
+* Simple and clear Swing-based GUI
 
 ## 🧰 Requirements
 
 Make sure the following are installed:
 
-- Java JDK 22+  
-- Apache Maven  
-- MySQL Server 8.0+  
-- NetBeans IDE (recommended for `.form` GUI compatibility)
+* Java JDK 22+
+* Apache Maven
+* MySQL Server 8.0+
+* NetBeans IDE (recommended for `.form` GUI compatibility)
 
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the Repository
 
-```bash
-git clone https://github.com/your-username/inventory-management-system.git
-cd inventory-management-system
-```
+Clone or download this repository to your local machine.
 
 ### 2. Set Up the MySQL Database
 
-Create a new database (e.g., `ims_db`) using MySQL Workbench or the command line.  
-Then run the contents of `sql/schema.sql` to create the required tables.
+Run the schema script to create all necessary tables:
+
+```sql
+source sql/schema.sql;
+```
+
+(Optional) Run the seed script to populate the database with sample data:
+
+```sql
+source sql/seed.sql;
+```
 
 ### 3. Configure Database Connection
 
@@ -85,8 +91,9 @@ mvn clean install
 
 ### 5. Run the Application
 
-Run the app from your IDE (launch `MainWindow.java`)  
-Or, if you've built a JAR:
+Run the app from your IDE (launch `MainWindow.java`).
+
+*If you choose to build a `.jar` file for your own distribution, you can run it with:*
 
 ```bash
 java -jar target/InventoryManagementSystem.jar
@@ -94,29 +101,31 @@ java -jar target/InventoryManagementSystem.jar
 
 ## 🖥️ How to Use
 
-- The main window displays inventory data in a table.
-- Use the top menu buttons to switch between Products, Purchases, Sales, and Suppliers.
-- Inside each section:
-  - **Add**: Opens a form to insert a new record.
-  - **Edit**: Select a record, click edit, modify the data, and save.
-  - **Delete**: Select a record and delete it. Deleting a sale or purchase will remove all entries in that transaction.
-  - **Refresh**: Reloads the table data.
+* The main window displays inventory data in a table.
+* Use the top menu buttons to switch between Products, Purchases, Sales, and Suppliers.
+* Inside each section:
+
+  * **Add**: Opens a form to insert a new record.
+  * **Edit**: Select a record, click edit, modify the data, and save.
+  * **Delete**: Select a record and delete it. Deleting a sale or purchase will remove all entries in that transaction.
+  * **Refresh**: Reloads the table data.
 
 ### 📊 Reports
 
 Click the **Reports** button to view:
-- Total sales summary
-- Low-stock product alerts
+
+* Total sales summary
+* Low-stock product alerts
 
 ## ⚠️ Special Notes
 
-- Negative stock values are allowed (e.g., for backorders or pre-orders).
-- Deleting a sale or purchase deletes all items with the same transaction ID.
-- Always click “Refresh” after making changes to update the table.
+* Negative stock values are allowed (e.g., for backorders or pre-orders).
+* Deleting a sale or purchase deletes all items with the same transaction ID.
+* Always click “Refresh” after making changes to update the table.
 
 ## 📄 License
 
-This project is provided for educational use and demonstration.  
+This project is provided for educational use and demonstration.
 
 ## 📬 Contact
 
